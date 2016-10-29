@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bloc </title>
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+
+ 
+
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <!-- FONTS --> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <!-- STYLESHEETS -->
+     <link rel="stylesheet" href="../../assets/css/style.css">
+
+     <!-- VENDOR SCRIPTS -->
+     <!-- jquery -->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+     <!-- handlebars -->
+     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
+
+     <!-- APPLICATION SCRIPTS -->
+     <script src="../../assets//javascripts/scripts/data.js"></script>
+     <script src="../../assets/javascripts/scripts/app.js"></script>
+     <!-- CSS  -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <link href="../../assets/stylesheets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="../../assets/stylesheets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+    
+    <nav>
+    <div class="nav-wrapper white">
+      <a href="#!" class="brand-logo black-text">BLOC </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down ">
+        <li><a class="black-text" href="sass.html">Profile</a></li>
+        <li><a class="black-text" href="badges.html">Notifications</a></li>
+        
+      </ul>
+      
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+    
+    
+    
+    
+    
+
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
+
+
+<%= yield %>
+
+</body>
+
+</html>
+
+<style>
+
+body {
+	background: url("http://www.ourbloc.co/uploads/2/4/0/1/24014742/ilike_orig.jpg") no-repeat center center fixed;
+	margin: 0 auto;
+	background-size: cover;
+	width: 100%;
+	}
+</style>

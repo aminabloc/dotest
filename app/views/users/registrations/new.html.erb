@@ -1,0 +1,109 @@
+<h2 id="formhead">JOIN US AS WE RISE</h2>
+
+<div class="loginback"> </div>
+
+<div class="loginform">
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email, :class =>"fieldtext" %><br />
+    <%= f.email_field :email, autofocus: true , :class =>"fieldtext" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password , :class =>"fieldtext" %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", :class =>"fieldtext" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation , :class =>"fieldtext" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" , :class =>"fieldtext"%>
+  </div>
+
+  <div class="waves-effect waves-light btn" id="signupbtn">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "users/shared/links" %>
+</div>
+
+<div id="loginfooter"> 
+BLACK COLLLEGIANS ON THE RISE
+</div>
+
+
+</div>
+
+
+<style>
+
+body {
+	background: url("http://www.ourbloc.co/uploads/2/4/0/1/24014742/blackwomen_orig.jpg") no-repeat center center fixed;
+	margin: 0 auto;
+	background-size: cover;
+	width: 100%;
+	}
+	
+#formhead {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  font-size: 5em;
+  color: black;
+  font-weight: strong;
+  
+}
+
+#loginfooter{
+  bottom: 0%;
+  background-color: 10%;
+}
+
+.loginform{
+   position: absolute;
+   left: 10%;
+   width: 80%;
+   top: 35%;
+    padding: 3%;
+    font-size: 40px;
+}
+
+.loginback{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  height: 60%;
+  width: 80%;
+  background-color: white;
+  opacity: .8;
+}
+
+.fieldtext {
+  font-size: 1.2em;
+  color: black;
+}
+
+input.fieldtext {
+  font-size: 1.5em;
+  color: black;
+  height: 10%;
+}
+
+#signupbtn{
+  color: white;
+  position: relative;
+  font-size: 1.5em;
+  margin-top: 5%;
+  left: 20%;
+  height: 20%;
+  width: 50%;
+}
+
+</style>
