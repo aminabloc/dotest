@@ -23,6 +23,12 @@
 }
 
 
+#core-head{
+    color: white;
+    top:15%;
+    font-size: 6em;
+}
+
 nav {
     height: 60px;
     line-height: 60px;

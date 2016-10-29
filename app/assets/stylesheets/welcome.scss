@@ -5,7 +5,8 @@
 
 .core-menu{
     position: absolute;
-    top: 25%;
+    top: 20%;
+    left: 22%;
 }
 .core-bloc{
     background-color: white;
@@ -13,7 +14,18 @@
     font-weight: bold;
     height: 5em;
     left: 20%;
-    width: 90%;
+    width: 100%;
     opacity: .8;
-    padding: 5%;
+    padding: 10%;
+}
+
+#core-head{
+    color: white;
+    top:15%;
+    font-size: 6em;
+    padding: 10%;
+}
+
+.core-bloc:hover {
+    background-color: grey;
 }
