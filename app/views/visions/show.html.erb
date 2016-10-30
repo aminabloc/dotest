@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<div class="profile-back">
+<p>
+  <strong>User:</strong>
+  <%= @vision.user.firstname %>
+</p>
+
+<p>
+  <strong> I will be the Oprah of </strong> 
+  <%= @vision.industry %>
+</p>
+
+<p>
+  <strong> In ten years I will be a </strong>
+  <%= @vision.ten %>
+</p>
+
+<p>
+  <strong>My dream first job </strong>
+  <%= @vision.dreamjob %>
+</p>
+
+
+<%= link_to 'Edit', edit_vision_path(@vision) %> |
+<%= link_to 'Back', visions_path %>
+
+</div>
+
+<style>
+.profile-back{
+    font-family: Montserrat;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    height: 60%;
+    padding: 5em 4em;
+    width: 100%;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 4em;
+}
+
+</style>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :values
+  resources :visions
   root to: "welcome#home"
   get 'welcome/home'
   

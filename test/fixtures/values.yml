@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  whoserve: MyString
+  howserve: MyString
+  legacy: MyText
+
+two:
+  whoserve: MyString
+  howserve: MyString
+  legacy: MyText

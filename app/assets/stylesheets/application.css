@@ -23,11 +23,6 @@
 }
 
 
-#core-head{
-    color: white;
-    top:15%;
-    font-size: 6em;
-}
 
 nav {
     height: 60px;
@@ -46,6 +41,17 @@ nav .button-collapse i {
 
 nav .brand-logo { 
     font-size: 1.6rem; 
+}
+
+.fieldtext {
+  font-size: 4em;
+  color: black;
+}
+
+input.fieldtext {
+  font-size: 4em;
+  color: black;
+  height: 10%;
 }
 
 @media only screen and (min-width: 601px){

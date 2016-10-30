@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029001709) do
+ActiveRecord::Schema.define(version: 20161029210552) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -37,5 +37,29 @@ ActiveRecord::Schema.define(version: 20161029001709) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "values", force: :cascade do |t|
+    t.string   "whoserve"
+    t.string   "howserve"
+    t.text     "legacy"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  add_index "values", ["user_id"], name: "index_values_on_user_id"
+
+  create_table "visions", force: :cascade do |t|
+    t.string   "industry"
+    t.string   "ten"
+    t.string   "dreamjob"
+    t.string   "style"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "score"
+    t.integer  "user_id"
+  end
+
+  add_index "visions", ["user_id"], name: "index_visions_on_user_id"
 
 end
